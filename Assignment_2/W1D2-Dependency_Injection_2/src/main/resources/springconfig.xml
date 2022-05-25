@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="productService" class="edu.mum.cs544.ProductService">
+        <constructor-arg ref="product"/>
+    </bean>
+    <bean id="product" class="edu.mum.cs544.Product"/>
+</beans>
+<!--<bean id="customerDao" class="cs544.spring09.di.auto.CustomerDao"/>-->
+<!--<bean id="customerService" class="cs544.spring04.di.xml.CustomerService">-->
+<!--<property name="customerDao" ref="mockCustomerDao" />-->
+<!--</bean>-->
