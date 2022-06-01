@@ -25,17 +25,22 @@ public class App {
         Customer cus = new Customer("Yougesh", "Kumar");
 
 
-        Product p1 = new Product("product1", "This is product 1");
-        Product p2 = new Product("product2", "This is product 2");
+        Product p1 = new Book("Java", "Java OO", "Java OO");
+        Product p2 = new CD("Eminem", "8 Mile", "Rap");
+        Product p3 = new DVD("Titanic", "Movie", "Romance");
 
         OrderLine ol1 = new OrderLine(10L,p1 );
         OrderLine ol2 = new OrderLine(11L,p2 );
+        OrderLine ol3 = new OrderLine(12L,p3 );
 
         Order o1 = new Order(LocalDate.of(2010, 6, 17), cus,ol1);
         Order o2 = new Order(LocalDate.of(2010, 6, 18), cus,ol2);
+        Order o3 = new Order(LocalDate.of(2010, 6, 18), cus,ol3);
+
 
         em.persist(o1);
         em.persist(o2);
+        em.persist(o3);
 //        em.persist(ol1);
 //        em.persist(ol2);
         em.getTransaction().commit();
