@@ -1,0 +1,2 @@
+INSERT INTO Book VALUES(NULL, 'CS101', '123', 'yougesh', 506.0);
+INSERT INTO Book VALUES(NULL, 'CS102', '124', 'pinjani', 510.0);
