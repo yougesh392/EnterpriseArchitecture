@@ -12,7 +12,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="MVC" options="-endorseddirs &quot;C:\Users\yoges\OneDrive - Maharishi International University\Desktop\GitRepositries\EnterpriseArchitecture\Assignment_12\W3D1-MVC\target/endorsed&quot;" />
+      <module name="MVC" options="-endorseddirs &quot;$PROJECT_DIR$/target/endorsed&quot;" />
     </option>
   </component>
 </project>

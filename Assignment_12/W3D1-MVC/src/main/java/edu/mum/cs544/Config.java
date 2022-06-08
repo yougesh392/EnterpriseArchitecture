@@ -46,10 +46,10 @@ public class Config implements WebMvcConfigurer {
 	@Bean
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
-		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
 		dataSource.setUsername("root");
-		dataSource.setPassword("root");
-		dataSource.setUrl("jdbc:mysql://localhost/cs544?useSSL=false");
+		dataSource.setPassword("password");
+		dataSource.setUrl("jdbc:mysql://localhost:30306/cs544?allowPublicKeyRetrieval=true&useSSL=false");
 		return dataSource;
 	}
 
@@ -60,7 +60,7 @@ public class Config implements WebMvcConfigurer {
 		emf.setPackagesToScan("edu.mum.cs544");
 
 		Properties properties = new Properties();
-		properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
+		properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL8Dialect");
 		properties.setProperty("hibernate.id.new_generator_mappings", "false");
         properties.setProperty("hibernate.show_sql", "true");
         properties.setProperty("hibernate.format_sql", "true");
