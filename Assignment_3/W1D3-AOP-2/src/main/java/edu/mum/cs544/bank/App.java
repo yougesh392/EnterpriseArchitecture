@@ -14,6 +14,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class App {
 	public static void main(String[] args) {
 		ApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
+		//work done
 		IAccountService accountService = context.getBean("accountService", IAccountService.class);
 //		IAccountService accountService = new AccountService();
 		// create 2 accounts;

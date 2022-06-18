@@ -11,7 +11,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StopWatch;
 
-@EnableAspectJAutoProxy
+
 @Aspect
 @Component
 public class AdviceClass {
